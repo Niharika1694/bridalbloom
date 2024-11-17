@@ -371,7 +371,7 @@ footer a {
 footer .button {
     background-color: #e91e63;
     color: white;
-    padding: 10px 20px;
+    padding: 50px 60px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -381,5 +381,87 @@ footer .button {
 footer .button:hover {
     background-color: #c2185b;
 }
+
+/* Make the header fixed at the top of the page */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: peach;  /* Optional: sets the background color of the header */
+  z-index: 1500;  /* Ensures the header is above other content */
+  padding: 20px 30px;  /* Adjust padding to give some space around the content */
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for separation */
+}
+
+header .logo {
+  font-size: 30px;
+  font-weight: 850;
+  font-family: 'Dancing Script', cursive;
+}
+
+nav {
+  position: absolute; /* Keeps the navigation within the header */
+  top: 85%; /* Vertically centers the nav */
+  transform: translateY(-50%); /* Adjust to perfectly center the nav */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+/* Navigation styling */
+nav {
+  display: flex;                /* Use flexbox */
+  justify-content: center;      /* Horizontally center the items */
+  align-items: center;          /* Vertically center the items */
+  height: 100%;                  /* Ensure it takes full height of the header */
+}
+
+nav ul {
+  display: flex;                /* Use flexbox for the list */
+  list-style-type: none;         /* Remove default list bullets */
+  margin: 0;                     /* Remove default margin */
+  padding: 0;                    /* Remove default padding */
+}
+
+nav ul li {
+  margin: 0 15px;                /* Add space between the links */
+}
+
+nav ul li a {
+  text-decoration: none;         /* Remove underline from links */
+  font-weight: 600;               /* Make the font weight bold */
+  font-family: 'Lato', sans-serif;
+  color: black;                  /* Set text color */
+  font-size: 16px;                /* Adjust font size */
+  text-transform: uppercase;     /* Optional: makes the text uppercase */
+  transition: color 0.3s ease;   /* Smooth transition for color change */
+}
+
+nav ul li a:hover {
+  color: #ff6347;                /* Optional: change color on hover (e.g., tomato) */
+}
+
+
+body {
+  margin-top: 80px; /* Adjust for the height of the fixed header */
+}
+
+
+/* Target the subscribe button specifically */
+#newsletter-form .button {
+  font-size: 14px; /* Adjust the font size */
+  padding: 8px 16px; /* Adjust the padding to make the button smaller */
+  height: auto; /* Allow button height to adjust based on content */
+}
+
 
 
